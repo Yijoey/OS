@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++0x -Wall -Werror -g   CMakeFiles/bitmap_test.dir/test/tests.cpp.o CMakeFiles/bitmap_test.dir/src/bitmap.c.o  -o bitmap_test -lgtest -lpthread 
