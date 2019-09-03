@@ -1,4 +1,0 @@
-/home/yz8pd/a2_c_refresher_yz8pd/arrays/build/CMakeFiles/rebuild_cache.dir
-/home/yz8pd/a2_c_refresher_yz8pd/arrays/build/CMakeFiles/edit_cache.dir
-/home/yz8pd/a2_c_refresher_yz8pd/arrays/build/CMakeFiles/test.dir
-/home/yz8pd/a2_c_refresher_yz8pd/arrays/build/CMakeFiles/arrays_test.dir

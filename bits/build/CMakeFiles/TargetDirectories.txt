@@ -1,4 +1,0 @@
-/home/yz8pd/a2_c_refresher_yz8pd/bits/build/CMakeFiles/rebuild_cache.dir
-/home/yz8pd/a2_c_refresher_yz8pd/bits/build/CMakeFiles/edit_cache.dir
-/home/yz8pd/a2_c_refresher_yz8pd/bits/build/CMakeFiles/test.dir
-/home/yz8pd/a2_c_refresher_yz8pd/bits/build/CMakeFiles/bitmap_test.dir
