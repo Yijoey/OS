@@ -21,7 +21,7 @@
 
 bitmap_t *bitmap_create(size_t n_bits)
 {
-    if(n_bits == 0){
+    if(n_bits <= 0){
         return NULL;
     }
     bitmap_t *bitmap = malloc(n_bits);
@@ -31,7 +31,7 @@ bitmap_t *bitmap_create(size_t n_bits)
         // bitmap->data = calloc(bitmap->byte_count,sizeof(bitmap->data));
         bitmap->data = calloc(bitmap->byte_count,sizeof(*bitmap->data));
         if(bitmap->data == NULL){
-            free(bitmap);
+            //free(bitmap);
             return NULL;
         }
     }
@@ -65,7 +65,7 @@ bool bitmap_reset(bitmap_t *const bitmap, const size_t bit)
     int pos = bit%8;
     unsigned int flag = 1;
     flag = flag << pos;   
-    flag = ~flag;     // // flag = 1111...101..111
+    flag = ~flag;      // flag = 1111...101..111
     bitmap->data[index] = bitmap->data[index] & flag;
     return true;
 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++0x -Wall -Werror -g   CMakeFiles/strings_test.dir/test/tests.cpp.o CMakeFiles/strings_test.dir/src/sstring.c.o  -o strings_test -lgtest -lpthread 

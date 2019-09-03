@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yz8pd/a2_c_refresher_yz8pd/system_programming/include/sys_prog.h
+stdbool.h
+-
+stddef.h
+-
+sys/types.h
+-
+stdint.h
+-
+unistd.h
+-
+
+/home/yz8pd/a2_c_refresher_yz8pd/system_programming/src/sys_prog.c
+string.h
+-
+stdlib.h
+-
+stdio.h
+-
+errno.h
+-
+unistd.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+../include/sys_prog.h
+/home/yz8pd/a2_c_refresher_yz8pd/system_programming/include/sys_prog.h
+

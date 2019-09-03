@@ -103,12 +103,12 @@ bool endianess_converter(uint32_t *src_data, uint32_t *dst_data, const size_t sr
     size_t i;
     for( i = 0; i < src_count; i++){
         uint32_t num = src_data[i];
-        uint32_t b0,b1,b2,b3;
-        b0 = (num & 0x000000ff) << 24u;
-        b1 = (num & 0x0000ff00) << 8u;
-        b2 = (num & 0x00ff0000) >> 8u;
-        b3 = (num & 0xff000000) >> 24u;
-        dst_data[i] = b0|b1|b2|b3;
+        uint32_t Byte1,Byte2,Byte3,Byte4;
+        Byte1 = (num & 0x000000ff) << 24;     //0x00 00 00 ff, get last byte, then put it forward. 1 byte = 8 bits 前移3位 = 24
+        Byte2 = (num & 0x0000ff00) << 8;
+        Byte3 = (num & 0x00ff0000) >> 8;
+        Byte4 = (num & 0xff000000) >> 24;
+        dst_data[i] = Byte1|Byte2|Byte3|Byte4;
 
     }
     return true;

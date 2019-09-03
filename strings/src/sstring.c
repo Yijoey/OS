@@ -17,8 +17,12 @@ bool string_valid(const char *str, const size_t length)
         return false;
     }
     //return strlen(str) == length;
-    return *(str + length - 1) == '\0';
 
+    if(str[length-1] == '\0'){
+        return true;
+    }
+    //return *(str + length - 1) == '\0';
+    return false;
 }
 
 
